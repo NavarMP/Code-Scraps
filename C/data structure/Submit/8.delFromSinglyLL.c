@@ -1,113 +1,150 @@
 //Delete a given node from a singly linked list
 
-#include <stdio.h> 
-#include <stdlib.h> 
+#include <stdio.h>  // Required for standard input/output functions like printf, scanf
+#include <stdlib.h> // Required for dynamic memory allocation functions like malloc, free
 
-// Define a structure for the node 
-struct Node { 
-    int data; 
-    struct Node* next; 
-}; 
+// Define a structure for the node
+struct Node {
+    int data;         // Data part of the node
+    struct Node *next; // Pointer to the next node in the list
+};
 
-// Function to create a linked list with n nodes 
-struct Node* createLinkedList(int n) { 
-    struct Node *head = NULL, *temp = NULL, *newNode; 
-    int data, i; 
+// Function to create a linked list with 'n' nodes
+struct Node *createLinkedList(int n) {
+    struct Node *head = NULL; // Initialize head to NULL for an empty list
+    struct Node *temp = NULL; // Temporary pointer to traverse and link nodes
+    struct Node *newNode;     // Pointer for the newly created node
+    int data, i;
 
-    for(i = 1; i <= n; i++) { 
-        newNode = (struct Node*)malloc(sizeof(struct Node)); 
-        printf("Enter data for node %d: ", i); 
-        scanf("%d", &data); 
-        newNode->data = data; 
-        newNode->next = NULL; 
+    for (i = 1; i <= n; i++) {
+        // Allocate memory for a new node
+        newNode = (struct Node *)malloc(sizeof(struct Node));
+        if (newNode == NULL) { // Check if memory allocation failed
+            perror("Memory allocation failed");
+            exit(EXIT_FAILURE);
+        }
 
-        if(head == NULL) { 
-            head = newNode; 
-        } else { 
-            temp->next = newNode; 
-        } 
-        temp = newNode; 
-    } 
-    return head; 
-} 
+        printf("Enter data for node %d: ", i);
+        scanf("%d", &data);
 
-// Function to delete a node at a given position 
-struct Node* deleteNode(struct Node* head, int position) { 
-    struct Node* temp = head; 
-    struct Node* prev = NULL; 
-    int i; 
+        newNode->data = data;   // Assign data to the new node
+        newNode->next = NULL;   // New node initially points to NULL
 
-    // Case 1: List is empty 
-    if(head == NULL) { 
-        printf("List is empty.\n"); 
-        return head; 
-    } 
+        if (head == NULL) { // If the list is empty, new node becomes the head
+            head = newNode;
+        } else { // If list is not empty, link the new node to the end of the list
+            temp->next = newNode;
+        }
+        temp = newNode; // Move temp to the newly added node (which is now the last node)
+    }
+    return head; // Return the head of the created linked list
+}
 
-    // Case 2: Deleting the head node (position = 1) 
-    if(position == 1) { 
-        head = temp->next; 
-        free(temp);  // Free the old head 
-        return head; 
-    } 
+// Function to delete a node at a given position
+struct Node *deleteNode(struct Node *head, int position) {
+    struct Node *temp = head; // Pointer to traverse to the node to be deleted
+    struct Node *prev = NULL; // Pointer to keep track of the previous node
+    int i;
 
-    // Case 3: Deleting a node at a given position (not the head) 
-    for(i = 1; i < position && temp != NULL; i++) { 
-        prev = temp; 
-        temp = temp->next; 
-    } 
+    // Case 1: List is empty
+    if (head == NULL) {
+        printf("List is empty. Cannot delete.\n");
+        return head;
+    }
 
-    // If the position is greater than the number of nodes 
-    if(temp == NULL) { 
-        printf("Position out of range.\n"); 
-        return head; 
-    } 
+    // Input validation: Position should be positive
+    if (position <= 0) {
+        printf("Invalid position. Position must be a positive integer.\n");
+        return head;
+    }
 
-    // Unlink the node to be deleted and free it 
-    prev->next = temp->next; 
-    free(temp); 
-    return head; 
-} 
+    // Case 2: Deleting the head node (position = 1)
+    if (position == 1) {
+        head = temp->next; // Move head to the next node
+        printf("Deleted node with data: %d\n", temp->data); // Inform about deleted node
+        free(temp);         // Free the memory of the old head
+        return head;        // Return the new head
+    }
 
-// Function to display the linked list 
-void displayLinkedList(struct Node* head) { 
-    struct Node* temp = head; 
+    // Case 3: Deleting a node at a given position (not the head)
+    // Traverse to the node just before the one to be deleted
+    for (i = 1; i < position && temp != NULL; i++) {
+        prev = temp;      // Keep track of the previous node
+        temp = temp->next; // Move to the next node
+    }
 
-    if(head == NULL) { 
-        printf("List is empty.\n"); 
-        return; 
-    } 
+    // If the position is greater than the number of nodes
+    if (temp == NULL) {
+        printf("Position out of range. Node not found.\n");
+        return head;
+    }
 
-    printf("Linked list: "); 
-    while(temp != NULL) { 
-        printf("%d -> ", temp->data); 
-        temp = temp->next; 
-    } 
-    printf("NULL\n"); 
-} 
+    // Unlink the node to be deleted and free its memory
+    prev->next = temp->next; // Link previous node to the next node of the deleted one
+    printf("Deleted node with data: %d\n", temp->data); // Inform about deleted node
+    free(temp);                                        // Free the memory of the deleted node
+    return head;                                       // Return the head of the updated list
+}
 
-int main() { 
-    int n, position; 
-    struct Node* head = NULL; 
+// Function to display the linked list
+void displayLinkedList(struct Node *head) {
+    struct Node *temp = head; // Temporary pointer to traverse the list
 
-    // Input number of nodes 
-    printf("Enter the number of nodes: "); 
-    scanf("%d", &n); 
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
 
-    // Create linked list 
-    head = createLinkedList(n); 
+    printf("Linked list: ");
+    while (temp != NULL) {
+        printf("%d -> ", temp->data); // Print the data of the current node
+        temp = temp->next;           // Move to the next node
+    }
+    printf("NULL\n"); // Indicate the end of the list
+}
 
-    // Display the linked list 
-    displayLinkedList(head); 
+// Function to free all nodes in the linked list (to prevent memory leaks)
+void freeLinkedList(struct Node *head) {
+    struct Node *current = head;
+    struct Node *next_node;
+    while (current != NULL) {
+        next_node = current->next; // Store the next node before freeing the current one
+        free(current);             // Free the current node
+        current = next_node;       // Move to the next node
+    }
+}
 
-    // Input the position of the node to delete 
-    printf("Enter the position of the node to delete: "); 
-    scanf("%d", &position); 
+int main() {
+    int n, position;
+    struct Node *head = NULL; // Initialize head of the list to NULL
 
-    // Delete the node at the given position 
-    head = deleteNode(head, position); 
+    // Input number of nodes
+    printf("Enter the number of nodes to create: ");
+    scanf("%d", &n);
 
-    // Display the updated linked list 
-    displayLinkedList(head); 
+    if (n <= 0) {
+        printf("Number of nodes must be positive.\n");
+        return 1; // Exit with an error code
+    }
 
-    return 0; 
+    // Create linked list
+    head = createLinkedList(n);
+
+    // Display the linked list
+    displayLinkedList(head);
+
+    // Input the position of the node to delete
+    printf("Enter the position of the node to delete: ");
+    scanf("%d", &position);
+
+    // Delete the node at the given position
+    head = deleteNode(head, position);
+
+    // Display the updated linked list
+    displayLinkedList(head);
+
+    // Free all allocated memory before program exits
+    freeLinkedList(head);
+
+    return 0; // Indicate successful program execution
 }
