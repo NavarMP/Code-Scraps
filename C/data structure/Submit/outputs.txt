@@ -1,0 +1,133 @@
+ 1.append2Arr.c
+ Please Enter the First Array Size: 3
+ Please Enter the First Array Elements: 1 2 3
+ Please Enter the Second Array Size: 2
+ Please Enter the Second Array Elements: 4 5
+
+ Merged Array Elements:
+ 1    2    3    4    5
+
+ 2.stackWithArr.choice
+ Enter the size of STACK [MAX=100]: 3
+
+	STACK OPERATIONS USING ARRAY
+	--------------------------------
+	 1. PUSH
+	 2. POP
+	 3. DISPLAY
+	 4. EXIT
+
+ Enter your Choice: 1
+ Enter a value to be pushed: 10
+
+ Enter your Choice: 1
+ Enter a value to be pushed: 20
+
+ Enter your Choice: 3
+
+ The elements in STACK are:
+20
+10
+ Press Next Choice
+
+ Enter your Choice: 2
+
+	The popped element is 20
+
+ Enter your Choice: 4
+
+	 EXIT POINT
+
+3. stackWithLL.c
+ 1 - Push
+ 2 - Pop
+ 3 - Top
+ 4 - Empty
+ 5 - Exit
+ 6 - Display
+ 7 - Stack Count
+ 8 - Destroy stack
+
+ Enter choice : 1
+Enter data : 10
+
+ Enter choice : 1
+Enter data : 20
+
+ Enter choice : 6
+20 10
+
+ Enter choice : 2
+
+ Enter choice : 3
+
+ Top element : 10
+
+ Enter choice : 5
+
+4. sparseMatrixAndTriplet
+Enter the number of rows and columns of the matrix:
+3 3
+Enter the elements of the matrix:
+1 0 0
+0 2 0
+0 0 3
+
+Original Matrix:
+1 0 0
+0 2 0
+0 0 3
+
+Sparse Matrix Representation (Triplet Format):
+Row   Column   Value
+0      0      1
+1      1      2
+2      2      3
+
+5. queueWithArr.c
+***** MENU *****
+1. Insertion
+2. Deletion
+3. Display
+4. Exit
+
+Enter your choice: 1
+Enter the value to be inserted: 5
+
+Insertion successful!
+
+Enter your choice: 1
+Enter the value to be inserted: 10
+
+Insertion successful!
+
+Enter your choice: 3
+
+Queue elements are:
+5	10
+
+Enter your choice: 2
+
+Deleted: 5
+
+Enter your choice: 3
+
+Queue elements are:
+10
+
+6. queueWithLL.c
+Enqueued: 10
+Enqueued: 20
+Enqueued: 30
+Queue after enqueue operations: Queue elements: 10 20 30
+
+Dequeued: 10
+Queue after dequeue operation: Queue elements: 20 30
+
+Dequeued: 20
+Queue after second dequeue operation: Queue elements: 30
+
+Dequeued: 30
+Queue after third dequeue operation: Queue is empty
+
+Queue is empty
