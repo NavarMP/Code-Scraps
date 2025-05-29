@@ -1,3 +1,5 @@
+//recursive binary search in array
+
 #include <stdio.h>
 
 // Function for Recursive Binary Search
