@@ -1,0 +1,11 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/macbook/Desktop/Code/college/NavarMP SAFI Lab/Sem3/Code/C/data structure/Programs/14.evalPostfixExp'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _createStackNode, symObjAddr: 0x0, symBinAddr: 0x100000C00, symSize: 0x40 }
+  - { offset: 0x7F, size: 0x8, addend: 0x0, symName: _createStackNode, symObjAddr: 0x0, symBinAddr: 0x100000C00, symSize: 0x40 }
+  - { offset: 0xB5, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x40, symBinAddr: 0x100000C40, symSize: 0x40 }
+  - { offset: 0xF5, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0x80, symBinAddr: 0x100000C80, symSize: 0x80 }
+  - { offset: 0x139, size: 0x8, addend: 0x0, symName: _evaluatePostfix, symObjAddr: 0x100, symBinAddr: 0x100000D00, symSize: 0x170 }
+  - { offset: 0x1A7, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x270, symBinAddr: 0x100000E70, symSize: 0xAA }
+...
