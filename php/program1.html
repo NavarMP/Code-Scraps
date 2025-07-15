@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprehensive Form</title>
+</head>
+<body>
+    <form action="/submit" method="post" oninput="sum.value = (+a.value || 0) + (+b.value || 0)">
+        <!-- Fieldset with legend -->
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+            <br><br>
+            <label for="country">Country: </label>
+            <select id="country" name="country">
+                <optgroup label="Asia">
+                    <option value="IN">India</option>
+                    <option value="CN">China</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="GB">UK</option>
+                    <option value="DE">Germany</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+        <!-- Input with datalist -->
+        <label for="color">Favorite color: </label>
+        <input list"colors" id="color" name="color">
+            <datalist id="colors">
+                <option value="Red">
+                <option value="Green">
+                <option value="Blue">
+            </datalist>
+        <br><br>
+        <!-- Numeric inputs and output -->
+        <label for="a">A:</label>
+        <input type="number" id="a" name="a" value="0"> <label for="b">B:</label>
+        <input type="number" id="b" name="b" value="0">
+        <output name="sum" for="a b">0</output>
+        <br><br>
+        <!-- Key pair generator (legacy HTML5 element) -->
+        <label>Generate key:</label>
+        <keygen name="userkey"><br><br>
+        <!-- Progress indicator -->
+        <label>Upload progress:</label>
+        <br><br>
+        <!-- Numeric inputs and output -->
+        <label for="a">A:</label>
+        <input type="number" id="a" name="a" value="0">
+        <label for="b">B:</label>
+        <input type="number" id="b" name="b" value="0">
+        <output name="sum" for="a b">0</output>
+        <br><br>
+        <!-- Key pair generator (legacy HTML5 element) -->
+        <label>Generate key: </label>
+        <keygen name="userkey"><br><br>
+        <!-- Progress indicator-->
+        <label>Upload progress:</label>
+        <progress id="progressBar" value="30" max="100">30%</progress>
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Hello!')">Click Me!</button>
+    </form>
+</body>
+</html>
