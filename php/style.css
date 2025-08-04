@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: purple;
+  border-bottom: 2px solid purple;
+}
+
+p {
+  color: #333;
+}
