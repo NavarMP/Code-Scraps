@@ -2,26 +2,7 @@
 
 # C
 
-1. lab 1
-2. lab 2
-3. lab 3
-4. lab 4
-5. lab 5
-6. lab 6
-7. lab 7
-8. lab 8
-9. lab 9
-10. lab 10
-11. lab 11
-12. lab 12
-13. lab 13
-14. lab 14
-15. lab 15
-16. lab 16
-17. lab 17
-18. lab 18
-19. lab 19
-20. lab 20
+lab 1 - lab 20
 
 ## Data Structure
 
