@@ -1,0 +1,43 @@
+<!--
+Check whether the given sides can form a triangle. If yes,
+find the type (isosceles, equilateral and scalene)
+and area of the triangle.
+Use prompt dialogue box to accept the sides.-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle type</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Raleway;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var x, y, z;
+        x = parseInt (window.prompt ("Enter length of the 1st side: "));
+        y = parseInt (window.prompt ("Enter length of the 2nd side: "));
+        z = parseInt (window.prompt ("Enter length of the 3rd side: "));
+        alert ("sides =" + x + " " + y + " " + z);
+
+        if (x + y > z && x + z > y && z + y > x) {
+            if (x == y && y == z) {
+                document.write ("Your triangle is Equilateral Triangle");
+            }
+            else if (x == y || y == z || z == x) {
+                document.write ("Your triangle is Isosceles triangle");
+            }
+            else {
+                window.alert ("Your triangle is Scalene triangle")
+            }
+        }
+        else {
+                window.alert ("Triangle can't made by this sides.")
+        }
+    </script>
+</body>
+</html>

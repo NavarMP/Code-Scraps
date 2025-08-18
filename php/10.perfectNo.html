@@ -1,0 +1,42 @@
+<!--Given number is Perfect/abundant/deficient-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JavaScript Example</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Raleway;
+        }
+    </style>
+    <script>
+        function findPerfect() {
+    var n = document.getElementById('num').value;
+    var sum = 0;
+    for (var i = 0; i < n; i++) {
+        if (n % i == 0 ) {
+            sum = sum + i;
+        }
+    }
+            if (sum == n)
+                alert("The number is perfect ");
+            else if (sum > n)
+                alert("The number is abundant");
+            else
+                alert("The number is deficient");
+}
+    </script>
+</head>
+<body>
+    <h1>Perfect Number</h1>
+    Enter a number:
+    <input type="text" id="num" />
+    <input type="button" value="Find" onClick="findPerfect()" />
+</body>
+</html>
