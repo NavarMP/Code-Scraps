@@ -1,0 +1,59 @@
+<!-- 3. Design a form that accepts two integers. Provide 4 buttons for Add, Subtract, Multiply, Divide.
+ Add JavaScript program to add, subtract, multiply and divide the given numbers when these buttons are clicked.
+ Use output element to display the results.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script>
+        function getInputValues() {
+            var val1 = parseFloat(document.getElementById("value1").value);
+            var val2 = parseFloat(document.getElementById("value2").value);
+            return [val1, val2];
+        }
+
+        function addNumbers() {
+            var [val1, val2] = getInputValues();
+            document.getElementById("answer").value = val1 + val2;
+        }
+
+        function subNumbers() {
+            var [val1, val2] = getInputValues();
+            document.getElementById("answer").value = val1 - val2;
+        }
+
+        function mulNumbers() {
+            var [val1, val2] = getInputValues();
+            document.getElementById("answer").value = val1 * val2;
+        }
+
+        function divNumbers() {
+            var [val1, val2] = getInputValues();
+            if (val2 === 0) {
+                document.getElementById("answer").value = "Cannot divide by zero";
+            } else {
+                document.getElementById("answer").value = val1 / val2;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <label for="value1">Value 1:</label>
+    <input type="number" id="value1" name="value1" value="1"><br><br>
+
+    <label for="value2">Value 2:</label>
+    <input type="number" id="value2" name="value2" value="2"><br><br>
+
+    <input type="button" value="Add" onclick="addNumbers()">
+    <input type="button" value="Subtract" onclick="subNumbers()">
+    <input type="button" value="Multiply" onclick="mulNumbers()">
+    <input type="button" value="Divide" onclick="divNumbers()"><br><br>
+
+    <label for="answer">Answer:</label>
+    <output id="answer"></output>
+</body>
+</html>
