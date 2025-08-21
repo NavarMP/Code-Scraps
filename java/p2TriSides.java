@@ -4,28 +4,32 @@ equilateral, isosceles or scalene and find its area.
 */
 
 import java.util.*;
-import java.lang.Math;
 public class p2TriSides {
     public static void main(String args[]) { 
-        Scanner sc=new Scanner(System.in); 
-        int a,b,c; 
-        double area,s,val; 
+        Scanner sc = new Scanner(System.in); 
+        double a, b, c; // Use double for sides to allow non-integer input
         System.out.println("Enter 3 sides:"); 
-        a=sc.nextInt(); 
-        b=sc.nextInt(); 
-        c=sc.nextInt(); 
-        if(a<b+c && b<a+c && c<a+b) 
-        { 
-        if(a==b && b==c) 
-        System.out.println("Equilateral triangle"); 
-        else if(a==b || b==c || c==a) 
-        System.out.println("Isosceles triangle"); 
-        else 
-        System.out.println("Scalene triangle"); 
-        s=(a+b+c)/2; 
-        val=s*(s-a)*(s-b)*(s-c); 
-        area=Math.sqrt(val); 
-        System.out.println("Area of the triangle is:"+area); 
+        a = sc.nextDouble(); 
+        b = sc.nextDouble(); 
+        c = sc.nextDouble(); 
+
+        // Check for triangle validity
+        if (a > 0 && b > 0 && c > 0 && a < b + c && b < a + c && c < a + b) { 
+            if (a == b && b == c) 
+                System.out.println("Equilateral triangle"); 
+            else if (a == b || b == c || c == a) 
+                System.out.println("Isosceles triangle"); 
+            else 
+                System.out.println("Scalene triangle"); 
+
+            double s = (a + b + c) / 2; 
+            double val = s * (s - a) * (s - b) * (s - c); 
+            if (val <= 0) {
+                System.out.println("Area cannot be calculated (invalid triangle sides).");
+            } else {
+                double area = Math.sqrt(val); 
+                System.out.println("Area of the triangle is: " + area); 
+            }
         } else {
             System.out.println("Cannot form a triangle"); 
         } 
