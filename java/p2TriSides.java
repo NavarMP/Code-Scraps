@@ -1,4 +1,4 @@
-/* Given the sides of a triangle, write a program to
+/* Given the sides of a triangle,
 check whether the triangle is
 equilateral, isosceles or scalene and find its area.
 */

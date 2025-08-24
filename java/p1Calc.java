@@ -1,4 +1,4 @@
-/*Write  a  program  to find the  sum, difference, product, quotient and 
+/*find the  sum, difference, product, quotient and 
 remainder of two numbers passed as command line argument */
 
 import java.util.Scanner;

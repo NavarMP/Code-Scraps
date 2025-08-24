@@ -1,4 +1,4 @@
-/*Write a program to perform base conversion 
+/*perform base conversion 
 a) Integer to binary 
 b) Integer to Octal 
 c) Integer to Hexadecimal  */

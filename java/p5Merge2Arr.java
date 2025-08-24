@@ -1,4 +1,4 @@
-// Write a program to merge two arrays.
+// merge two arrays.
 
 import java.util.Scanner; 
 public class p5Merge2Arr { 
