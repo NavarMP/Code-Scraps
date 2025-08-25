@@ -1,0 +1,21 @@
+<!-- 4. store different colors in an array and change the background color of the page using this array elements -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Define the array of background colors
+var backcolor = ["#00ff00", "#ff0000", "#0000ff", "#cccccc"];
+
+// Function to change the background color
+function myArray(n) {
+    document.body.style.backgroundColor = backcolor[n];
+}
+</script>
+<a href="#" onmouseover="myArray(1)">Red</a>
+<a href="#" onmouseover="myArray(2)">Blue</a>
+<a href="#" onmouseover="myArray(0)">Green</a>
+<a href="#" onmouseover="myArray(3)">Ash</a>
+<h1>Changing background color</h1>
+</body>
+</html>
