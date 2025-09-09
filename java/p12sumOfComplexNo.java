@@ -31,6 +31,6 @@ public class p12sumOfComplexNo {
     System.out.println("Complex number 2" + c2.real+ "+" + c2.imaginary + "i"); 
     Complex c3=new Complex(); 
     c3=c3.addComp(c1,c2); 
-    System.out.println("Sum of Complex Number" + c3.real + "+" +c3.imaginary + “i”);
+    System.out.println("Sum of Complex Number" + c3.real + "+" + c3.imaginary + "i");
     } 
 } 
