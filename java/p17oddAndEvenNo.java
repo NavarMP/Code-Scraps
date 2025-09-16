@@ -1,14 +1,11 @@
-public class p17oddAndEvenNo {
-    import java.io.*; 
-    class Even implements Runnable 
-    { 
+import java.io.*; 
+class Even implements Runnable { 
     Thread even; 
     int limit,i; 
-    Even(int a) 
-    { 
-    even=new Thread(this,“Even”); 
-    limit=a; 
-    even.start(); 
+    Even(int a) { 
+        even=new Thread(this,“Even”); 
+        limit=a; 
+        even.start(); 
     } 
     public void run() 
     { 
@@ -54,7 +51,7 @@ public class p17oddAndEvenNo {
     } 
     } 
      
-    class MultiThread 
+public class p17oddAndEvenNo {
     { 
     public static void main(String args[]) throws IOException 
     { 
