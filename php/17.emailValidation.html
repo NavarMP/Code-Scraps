@@ -1,0 +1,38 @@
+<!--6. Write a JavaScript Program to validate email based on the following condition
+Mail id must contain the @ and character
+There must be at least one character before and after the @.
+There must be at least two characters after. (dot). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script>
+        function validateEmail() {
+            var x=document.myform.email.value;
+            var atposition=x.indexOf("@");
+            var dotposition=x.lastIndexOf(".");
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length) {
+                alert("Please enter a valid e-mail address \n at position: " + atposition + "\n dot position: "+dotposition);
+                return false;
+            }
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+            color: #f1f2f2;
+            background-color: #121212;
+            font-family: Poppins;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp"
+    onsubmit="return validateEmail();">
+        Email: <input type="text" name="email"><br/>
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>

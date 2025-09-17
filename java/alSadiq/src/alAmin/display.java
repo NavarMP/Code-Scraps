@@ -1,4 +1,4 @@
-package myPackage;
+package alSadiq.src.alAmin;
 
 public class display {
     public void yourName() {
