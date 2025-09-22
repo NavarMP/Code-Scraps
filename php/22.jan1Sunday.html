@@ -1,0 +1,41 @@
+<!-- Write a JavaScript program to find years where 1st January is a Sunday between a range of years. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Years with Jan 1st Sunday</title>
+</head>
+<body>
+    <label for="year1">Year 1:</label>
+    <input type="number" id="year1" name="Year1"><br><br>
+    <label for="year2">Year 2:</label>
+    <input type="number" id="year2" name="Year2"><br><br>
+    <button onclick="sun_year()">Get Result</button>
+    <p id="disp"></p>
+    <script>
+        function sun_year() {
+            var y1 = Number(document.getElementById('year1').value);
+            var y2 = Number(document.getElementById('year2').value);
+            var res = "";
+
+            if (y1 > y2) {
+                document.getElementById('disp').innerHTML = "Year2 must be greater than Year1";
+                return;
+            }
+
+            for (let year = y1; year <= y2; ++year) {
+                const c_year = new Date(year, 0, 1);
+                if (c_year.getDay() === 0) { // 0 = Sunday
+                    res += year + ", ";
+                }
+            }
+
+            if (res === "") {
+                document.getElementById('disp').innerHTML = "<p>No Year Exist</p>";
+            } else {
+                document.getElementById('disp').innerHTML = `<p>Years having Sunday on 1st January are: ${res.slice(0, -2)}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

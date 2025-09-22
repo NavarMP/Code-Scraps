@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program to display Capital of a country using onchange event. -->
+ 
+<!DOCTYPE html>
+<html>
+<body>
+    <label>Select a country:</label>
+    <select id="countries" onchange="getCapital()">
+        <option value="0">Australia</option>
+        <option value="1">Poland</option>
+        <option value="2">Mexico</option>
+        <option value="3">Germany</option>
+        <option value="4">India</option>
+    </select>
+    <br><br>
+    Capital: <input type="text" id="txtbox" readonly>
+    <script>
+        function getCapital() {
+            var capitals = ["Canberra", "Warsaw", "Mexico City", "Berlin", "New Delhi"];
+            var i = document.getElementById("countries").value;
+            document.getElementById("txtbox").value = capitals[i];
+        }
+        // Show capital for default selection on page load
+        window.onload = getCapital;
+    </script>
+</body>
+</html>

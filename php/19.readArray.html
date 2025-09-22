@@ -1,0 +1,16 @@
+<!-- Write a JavaScript Program to create an Array, read values using Prompt popup box, and display the sum of elements in an Alert Box -->
+
+<html>
+<body>
+    <script>
+        var n = parseInt(window.prompt("Enter size of the array"));
+        var arr = [];
+        var sum = 0;
+        for (let i = 0; i < n; i++) {
+            arr[i] = parseInt(window.prompt("Enter element " + (i + 1)));
+            sum += arr[i];
+        }
+        alert("Sum: " + sum);
+    </script>
+</body>
+</html>
