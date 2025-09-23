@@ -1,7 +1,6 @@
-public class p22distancebw2pt {
-    import java.util.Scanner; 
+import java.util.Scanner; 
  
-public class DistanceBetweenPoints { 
+public class p22distancebw2pt { 
     public static void main(String[] args) { 
         Scanner sc = new Scanner(System.in); 
  
@@ -18,24 +17,11 @@ public class DistanceBetweenPoints {
         double y2 = sc.nextDouble(); 
  
         // Calculate distance using formula 
-        double distance = Math.sqrt(Math.pow((x2 - x1), 2) + 
-Math.pow((y2 - y1), 2)); 
+        double distance = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)); 
  
         // Display result 
-        System.out.println("The distance between the two points is: " + 
-distance); 
+        System.out.println("The distance between the two points is: " + distance); 
  
         sc.close(); 
-    } 
-}rs.close(); 
-st.close(); 
-con.close(); 
-System.in.read(); 
-} 
-catch(Exception e) 
-{ 
-System.out.println(e.getMessage()); 
-} 
-} 
-}
+    }
 }

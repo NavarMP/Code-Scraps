@@ -1,7 +1,6 @@
-public class p24ArmstrongWithinRange {
-    import java.util.Scanner; 
+import java.util.Scanner; 
  
-public class ArmstrongNumbersInRange { 
+public class p24ArmstrongWithinRange {
     // Function to check Armstrong number 
     public static boolean isArmstrong(int num) { 
         int original = num, sum = 0, digits = 0; 
@@ -31,8 +30,7 @@ public class ArmstrongNumbersInRange {
         System.out.print("Enter the ending number: "); 
         int end = sc.nextInt(); 
  
-System.out.println("Armstrong numbers between " + start + " and " 
- + end + " are:"); 
+        System.out.println("Armstrong numbers between " + start + " and " + end + " are:"); 
         for (int i = start; i <= end; i++) { 
             if (isArmstrong(i)) { 
                 System.out.print(i + " "); 
@@ -41,5 +39,4 @@ System.out.println("Armstrong numbers between " + start + " and "
  
         sc.close(); 
     } 
-}
 }

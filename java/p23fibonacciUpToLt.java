@@ -1,7 +1,6 @@
-public class p23fibonacciUpToLt {
-    import java.util.Scanner; 
+import java.util.Scanner; 
  
-public class FibonacciSeries { 
+public class p23fibonacciUpToLt {
     public static void main(String[] args) { 
         Scanner sc = new Scanner(System.in); 
  
@@ -24,4 +23,4 @@ public class FibonacciSeries {
         sc.close(); 
     } 
 }
-}
+
