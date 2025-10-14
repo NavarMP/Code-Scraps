@@ -6,7 +6,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class p19JavaFX extends Application {
+public class javaApp extends Application {
     
     // Parameters (from your original HTML)
     int x = 10;
