@@ -1,0 +1,232 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PortfolioApp",
+            "request": "launch",
+            "mainClass": "PortfolioApp",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DistanceBetweenPoints",
+            "request": "launch",
+            "mainClass": "DistanceBetweenPoints",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "add2No",
+            "request": "launch",
+            "mainClass": "add2No",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "usePackage",
+            "request": "launch",
+            "mainClass": "alSadiq.usePackage",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "area",
+            "request": "launch",
+            "mainClass": "area",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "bufferReader",
+            "request": "launch",
+            "mainClass": "bufferReader",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "exception",
+            "request": "launch",
+            "mainClass": "exception",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "javaApp",
+            "request": "launch",
+            "mainClass": "javaApp",
+            "projectName": "RandCodes_51f879f7",
+            "vmArgs": "--module-path \"C:/javafx-sdk-21/lib\" --add-modules javafx.controls,javafx.graphics"
+        },
+        {
+            "type": "java",
+            "name": "p10RemoveVowels",
+            "request": "launch",
+            "mainClass": "p10RemoveVowels",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p11StdDetails",
+            "request": "launch",
+            "mainClass": "p11StdDetails",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p12sumOfComplexNo",
+            "request": "launch",
+            "mainClass": "p12sumOfComplexNo",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p13countNoOfObjects",
+            "request": "launch",
+            "mainClass": "p13countNoOfObjects",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p14volumeCalc",
+            "request": "launch",
+            "mainClass": "p14volumeCalc",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p15abstractClassShape",
+            "request": "launch",
+            "mainClass": "p15abstractClassShape",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p17oddAndEvenNo",
+            "request": "launch",
+            "mainClass": "p17oddAndEvenNo",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p18BankAc",
+            "request": "launch",
+            "mainClass": "p18BankAc",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p19appletUpdate",
+            "request": "launch",
+            "mainClass": "p19appletUpdate",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p1Calc",
+            "request": "launch",
+            "mainClass": "p1Calc",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p21DBandJDBC",
+            "request": "launch",
+            "mainClass": "p21DBandJDBC",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p22distancebw2pt",
+            "request": "launch",
+            "mainClass": "p22distancebw2pt",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p23fibonacciUpToLt",
+            "request": "launch",
+            "mainClass": "p23fibonacciUpToLt",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p24ArmstrongWithinRange",
+            "request": "launch",
+            "mainClass": "p24ArmstrongWithinRange",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p2TriSides",
+            "request": "launch",
+            "mainClass": "p2TriSides",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p3ReadArr",
+            "request": "launch",
+            "mainClass": "p3ReadArr",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p4BaseConversion",
+            "request": "launch",
+            "mainClass": "p4BaseConversion",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p5Merge2Arr",
+            "request": "launch",
+            "mainClass": "p5Merge2Arr",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p6HCFLCM",
+            "request": "launch",
+            "mainClass": "p6HCFLCM",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p7MatrixTraceAndTranspose",
+            "request": "launch",
+            "mainClass": "p7MatrixTraceAndTranspose",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p8DigSumAndReverse",
+            "request": "launch",
+            "mainClass": "p8DigSumAndReverse",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "p9Anagram",
+            "request": "launch",
+            "mainClass": "p9Anagram",
+            "projectName": "RandCodes_51f879f7"
+        },
+        {
+            "type": "java",
+            "name": "writeMethods",
+            "request": "launch",
+            "mainClass": "writeMethods",
+            "projectName": "RandCodes_51f879f7"
+        }
+    ]
+}
