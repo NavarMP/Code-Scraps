@@ -1,55 +1,52 @@
-# 21. Write a shell script which uses all the file test operators
-
 #!/bin/bash
-
-#!/bin/sh 
+# 21. Write a shell script which uses all the file test operators
  
 echo -n "Enter File Name:" 
-    read file 
+read file 
  
-if [ -r $file ] 
+if [ -r "$file" ] 
 then 
    echo "File has read access" 
 else 
    echo "File does not have read access" 
 fi 
  
-if [ -w $file ] 
+if [ -w "$file" ] 
 then 
    echo "File has write permission" 
 else 
    echo "File does not have write permission" 
 fi 
  
-if [ -x $file ] 
+if [ -x "$file" ] 
 then 
    echo "File has execute permission" 
 else 
    echo "File does not have execute permission" 
 fi 
  
-if [ -f $file ] 
+if [ -f "$file" ] 
 then 
    echo "File is an ordinary file" 
 else 
    echo "This is sepcial file" 
 fi 
  
-if [ -d $file ] 
+if [ -d "$file" ] 
 then 
    echo "File is a directory" 
 else 
    echo "This is not a directory" 
 fi 
  
-if [ -s $file ] 
+if [ -s "$file" ] 
 then 
    echo "File size is not zero" 
 else 
    echo "File size is zero" 
 fi 
  
-if [ -e $file ] 
+if [ -e "$file" ] 
 then 
    echo "File exists" 
 else 

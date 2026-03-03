@@ -1,6 +1,5 @@
-# 19. Write a shell script to Display Banner, calendar of given year
-
 #!/bin/bash
+# 19. Write a shell script to Display Banner, calendar of given year
 
 # Display Banner 
 echo "==============================" 
@@ -13,4 +12,4 @@ read year
  
 # Display the calendar for the given year 
 echo "Calendar for the year $year:" 
-cal $year 
+cal "$year" 

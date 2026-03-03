@@ -1,6 +1,5 @@
-# 1. Write a shell script to find area of a circle
-
 #!/bin/bash
+# 1. find area of a circle
 
 echo "Enter the radius : " 
       read r 
