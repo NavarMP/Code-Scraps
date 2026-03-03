@@ -4,6 +4,8 @@
 
 ## 1. Basic Calculator
 
+**Description:** A simple calculator program that reads two integers and displays their sum, difference, product, quotient, and remainder.
+
 **File:** `p1Calc.java`
 
 ```java
@@ -58,6 +60,8 @@ Remainder = 3
 
 ## 2. Triangle Classification & Area
 
+**Description:** Determines the type of triangle based on side lengths and computes its area using Heron’s formula.
+
 **File:** `p2TriSides.java`
 
 ```java
@@ -104,6 +108,8 @@ Area of the triangle is: 6.0
 
 ## 3. Array: Find Smallest, Largest & Second Largest
 
+**Description:** Reads a list of numbers, sorts them, and reports the smallest, largest, and second-largest values.
+
 **File:** `p3ReadArr.java`
 
 ```java
@@ -148,6 +154,8 @@ Second largest: 9
 
 ## 4. Base Conversion (Decimal to Binary, Octal, Hexadecimal)
 
+**Description:** Converts a decimal integer into its hexadecimal, octal, and binary representations.
+
 **File:** `p4BaseConversion.java`
 
 ```java
@@ -191,6 +199,8 @@ Binary Value: 11001
 ---
 
 ## 5. Merge Two Arrays
+
+**Description:** Accepts two arrays from the user and merges them into a single combined array.
 
 **File:** `p5Merge2Arr.java`
 
@@ -265,6 +275,8 @@ Merged array:
 
 ## 6. HCF (GCD) and LCM of Two Numbers
 
+**Description:** Calculates the highest common factor and least common multiple of two integers.
+
 **File:** `p6HCFLCM.java`
 
 ```java
@@ -305,6 +317,8 @@ LCM = 36
 ---
 
 ## 7. Matrix Trace and Transpose
+
+**Description:** Displays a matrix entered by the user, its transpose, and computes the trace if it’s square.
 
 **File:** `p7MatrixTraceAndTranspose.java`
 
@@ -380,6 +394,8 @@ Trace = 15
 
 ## 8. Sum of Digits and Reverse of a Number
 
+**Description:** Computes both the reversed form of a number and the sum of its digits.
+
 **File:** `p8DigSumAndReverse.java`
 
 ```java
@@ -433,6 +449,8 @@ Sum of the digits = 15
 ---
 
 ## 9. Check if Strings are Anagrams
+
+**Description:** Checks whether two input strings are anagrams of each other.
 
 **File:** `p9Anagram.java`
 
@@ -488,6 +506,8 @@ Strings are anagram
 
 ## 10. Remove Vowels from String
 
+**Description:** Removes all vowels from a given string and prints the result.
+
 **File:** `p10RemoveVowels.java`
 
 ```java
@@ -516,6 +536,8 @@ H ll  W rld
 ---
 
 ## 11. Student Details with Marks (Inheritance)
+
+**Description:** Demonstrates inheritance by storing student admission numbers and subject marks, then calculating totals and results.
 
 **File:** `p11StdDetails.java`
 
@@ -600,6 +622,8 @@ Subject[5]: 92
 
 ## 12. Sum of Complex Numbers
 
+**Description:** Defines a `Complex` class and adds two complex numbers provided by the user.
+
 **File:** `p12sumOfComplexNo.java`
 
 ```java
@@ -657,6 +681,8 @@ Sum of Complex Numbers: 5+9i
 
 ## 13. Count Number of Objects Created
 
+**Description:** Uses a static field to count how many instances of the class have been created.
+
 **File:** `p13countNoOfObjects.java`
 
 ```java
@@ -685,6 +711,8 @@ Number of Objects Created: 4
 ---
 
 ## 14. Volume Calculation (Method Overloading)
+
+**Description:** Demonstrates method overloading by calculating volumes of different shapes.
 
 **File:** `p14volumeCalc.java`
 
@@ -746,6 +774,8 @@ Volume of Cylinder: 125.6
 
 ## 15. Distance Between Two Points
 
+**Description:** Computes the Euclidean distance between two points in the plane.
+
 **File:** `p22distancebw2pt.java`
 
 ```java
@@ -786,6 +816,8 @@ The distance between the two points is: 5.0
 
 ## 16. Fibonacci Series up to Limit
 
+**Description:** Prints Fibonacci numbers up to a user-specified limit.
+
 **File:** `p23fibonacciUpToLt.java`
 
 ```java
@@ -824,6 +856,8 @@ Fibonacci series up to 50:
 ---
 
 ## 17. Armstrong Numbers Within Range
+
+**Description:** Lists all Armstrong numbers between two given bounds.
 
 **File:** `p24ArmstrongWithinRange.java`
 
@@ -880,6 +914,8 @@ Armstrong numbers between 1 and 1000:
 
 ## 18. Prime Number Check
 
+**Description:** Checks whether an input integer is prime.
+
 **File:** `p17oddAndEvenNo.java` (Simplified version for prime checking)
 
 ```java
@@ -921,6 +957,8 @@ Enter a number: 17
 
 ## 19. Factorial of a Number
 
+**Description:** Calculates the factorial of a given number recursively.
+
 **File:** `FactorialProgram.java`
 
 ```java
@@ -952,6 +990,8 @@ Factorial of 5 = 120
 ---
 
 ## 20. Check Odd or Even
+
+**Description:** Determines whether a number is odd or even.
 
 **File:** `OddEvenCheck.java`
 

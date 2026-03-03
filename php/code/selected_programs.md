@@ -3,6 +3,9 @@
 This document lists the 20 programs extracted from the JavaScript and PHP PDFs. Each entry now includes the **source code** and a **realistic sample output** that would appear when the program is run. Filenames are shown after each title.
 
 ## 1. Perfect Number  
+
+**Aim:** Check if a number is perfect, abundant, or deficient.
+
 *(file: `js/program1_perfect.html`)*
 
 ### Source Code
@@ -37,6 +40,9 @@ This document lists the 20 programs extracted from the JavaScript and PHP PDFs. 
 Alerts: 'The number is perfect ' when input 6; 'The number is abundant' when input 12; 'The number is deficient' when input 5.
 
 ## 2. Triangle Check  
+
+**Aim:** Determine whether three given side lengths can form a triangle and identify its type.
+
 *(file: `js/program2_triangle.html`)*
 
 ### Source Code
@@ -67,6 +73,9 @@ Alerts: 'The number is perfect ' when input 6; 'The number is abundant' when inp
 If inputs 3,4,5 page shows 'Scalene Triangle'; invalid sides triggers alert 'triangle canot make by this sides'.
 
 ## 3. Input Tutorial  
+
+**Aim:** Demonstrate basic arithmetic operations on two numbers entered by the user.
+
 *(file: `js/program3_input_tutorial.html`)*
 
 ### Source Code
@@ -116,6 +125,9 @@ If inputs 3,4,5 page shows 'Scalene Triangle'; invalid sides triggers alert 'tri
 Entering 4 and 5 then clicking 'Add' sets Answer=9; clicking 'Mul' sets Answer=20, etc.
 
 ## 4. Changing Background Color  
+
+**Aim:** Change the webpage background color in response to mouse‑over events.
+
 *(file: `js/program4_change_bg.html`)*
 
 ### Source Code
@@ -143,6 +155,9 @@ Entering 4 and 5 then clicking 'Add' sets Answer=9; clicking 'Mul' sets Answer=2
 Moving mouse over 'Red' link changes background to red, etc.
 
 ## 5. Clock with Timing Event  
+
+**Aim:** Display and continually update the current time on the page.
+
 *(file: `js/program5_clock.html`)*
 
 ### Source Code
@@ -178,6 +193,9 @@ Moving mouse over 'Red' link changes background to red, etc.
 Page displays current time, e.g. '14:23:05 PM', updating every second.
 
 ## 6. Validate Email  
+
+**Aim:** Verify that an entered email address conforms to a basic valid format.
+
 *(file: `js/program6_validate_email.html`)*
 
 ### Source Code
@@ -206,6 +224,9 @@ Page displays current time, e.g. '14:23:05 PM', updating every second.
 Entering 'foo@bar' brings alert about invalid address with positions; 'user@domain.com' submits normally.
 
 ## 7. Password Validation  
+
+**Aim:** Ensure a password meets length requirements and matches the confirmation field.
+
 *(file: `js/program7_password_validation.html`)*
 
 ### Source Code
@@ -260,6 +281,9 @@ Entering 'foo@bar' brings alert about invalid address with positions; 'user@doma
 Entering mismatched passwords shows message '** password and confirm password must be same'; matching valid length displays alert 'Password is correct'.
 
 ## 8. Array Prompt Sum  
+
+**Aim:** Read numbers into an array via prompts and compute their total.
+
 *(file: `js/program8_array_prompt.html`)*
 
 ### Source Code
@@ -283,6 +307,9 @@ Entering mismatched passwords shows message '** password and confirm password mu
 Prompts 3 elements 1,2,3 then alerts 'Sum =6'.
 
 ## 9. Focus/Blur Color Change  
+
+**Aim:** Change the styling of a text box when it gains or loses focus.
+
 *(file: `js/program9_focus_blur.html`)*
 
 ### Source Code
@@ -309,6 +336,9 @@ Prompts 3 elements 1,2,3 then alerts 'Sum =6'.
 Focusing the textbox makes it lightgrey with blue text, blur returns to white/black.
 
 ## 10. Capitals and Countries  
+
+**Aim:** Show the capital city corresponding to a selected country.
+
 *(file: `js/program10_capitals.html`)*
 
 ### Source Code
@@ -339,6 +369,9 @@ Focusing the textbox makes it lightgrey with blue text, blur returns to white/bl
 Selecting 'India' fills textbox with 'New Delhi'.
 
 ## 11. First January Sunday  
+
+**Aim:** List years in a range where January 1st falls on a Sunday.
+
 *(file: `js/program11_jan_sunday.html`)*
 
 ### Source Code
@@ -384,6 +417,9 @@ Selecting 'India' fills textbox with 'New Delhi'.
 Entering years 2000 to 2020 displays 'Year having Sunday on 1st January are :2006 ,2012 ,2017 ,'; error if start > end.
 
 ## 12. Display Bio-data  
+
+**Aim:** Collect user name, address and phone via a form and display them.
+
 *(file: `php/biodata.php`)*
 
 ### Source Code
@@ -419,6 +455,9 @@ Entering years 2000 to 2020 displays 'Year having Sunday on 1st January are :200
 Submitting name=Alice,address=1 Rd,phone=123 prints three <h3> lines: Hello Alice, 1 Rd, 123.
 
 ## 13. Reverse a String  
+
+**Aim:** Reverse a given string using a PHP function.
+
 *(file: `php/reverse_string.php`)*
 
 ### Source Code
@@ -442,6 +481,9 @@ print_r(Reverse($str2));
 Outputs 'EKASRAMUKNAVAP' for the hardcoded string.
 
 ## 14. Perfect/Abundant/Deficient (duplicate)  
+
+**Aim:** (Duplicate) Determine if a number is perfect, abundant or deficient.
+
 *(file: `js/program14_perfect_duplicate.html`)*
 
 ### Source Code
@@ -476,6 +518,9 @@ Outputs 'EKASRAMUKNAVAP' for the hardcoded string.
 Same alert behavior as the first program.
 
 ## 15. Pay Slip of an Employee  
+
+**Aim:** Compute and display an employee’s pay slip with allowances and tax.
+
 *(file: `php/pay_slip.php`)*
 
 ### Source Code
@@ -537,6 +582,9 @@ Same alert behavior as the first program.
 For name Bob,basic=2000,desig=Clerk shows calculated gross and net salary values.
 
 ## 16. Display Last Visited Date/Time  
+
+**Aim:** Show the user's last visit timestamp using a cookie.
+
 *(file: `php/last_visit.php`)*
 
 ### Source Code
@@ -561,6 +609,9 @@ For name Bob,basic=2000,desig=Clerk shows calculated gross and net salary values
 First visit shows stale cookie message; second visit shows 'Your last visit was - 13:45 - 03/03/26'.
 
 ## 17. List of Fruits in a List Box  
+
+**Aim:** Allow selection of a fruit from a dropdown and display the choice.
+
 *(file: `php/fruits_list.php`)*
 
 ### Source Code
@@ -593,6 +644,9 @@ if ($_POST) {
 Selecting Mango and submitting yields 'You have selected : Mango'.
 
 ## 18. Store 10 Names in an Array  
+
+**Aim:** Perform various array operations on a preset list of names.
+
 *(file: `php/names_array.php`)*
 
 ### Source Code
@@ -651,6 +705,9 @@ if ($_POST) {
 Choosing 'display' prints each country on a new line; 'search' prints 'Position - 4'.
 
 ## 19. Multiplication Table using PHP (+ AJAX)  
+
+**Aim:** Generate a multiplication table for a number and demonstrate AJAX.
+
 *(file: `php/multiplication_table.php`)*
 
 ### Source Code
@@ -702,6 +759,9 @@ if($_POST) {
 Entering 3 produces lines '3 X 1 = 3' through '3 X 10 = 30'; clicking AJAX button loads explanation text.
 
 ## 20. Upload File to Server  
+
+**Aim:** Handle file upload and display the uploaded file's details.
+
 *(file: `php/upload_file.php`)*
 
 ### Source Code
