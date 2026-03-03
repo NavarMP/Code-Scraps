@@ -37,7 +37,11 @@ This document lists the 20 programs extracted from the JavaScript and PHP PDFs. 
 </html>
 ```
 ### Sample Output
-Alerts: 'The number is perfect ' when input 6; 'The number is abundant' when input 12; 'The number is deficient' when input 5.
+```text
+Enter 6 → alert("The number is perfect ")
+Enter 12 → alert("The number is abundant")
+Enter 5 → alert("The number is deficient")
+```
 
 ## 2. Triangle Check  
 
@@ -70,7 +74,15 @@ Alerts: 'The number is perfect ' when input 6; 'The number is abundant' when inp
 </html>
 ```
 ### Sample Output
-If inputs 3,4,5 page shows 'Scalene Triangle'; invalid sides triggers alert 'triangle canot make by this sides'.
+```text
+// user enters 3,4,5 via prompts
+alert("sides =3 4 5")
+page displays:
+Scalene Triangle
+
+// invalid sides example:
+alert("triangle canot make by this sides")
+```
 
 ## 3. Input Tutorial  
 
@@ -122,7 +134,13 @@ If inputs 3,4,5 page shows 'Scalene Triangle'; invalid sides triggers alert 'tri
 </html>
 ```
 ### Sample Output
-Entering 4 and 5 then clicking 'Add' sets Answer=9; clicking 'Mul' sets Answer=20, etc.
+```text
+value1 = 4, value2 = 5
+[Add] → answer field shows 9
+[Sub] → answer field shows -1
+[Mul] → answer field shows 20
+[Div] → answer field shows 0.8
+```
 
 ## 4. Changing Background Color  
 
@@ -152,7 +170,13 @@ Entering 4 and 5 then clicking 'Add' sets Answer=9; clicking 'Mul' sets Answer=2
 </html>
 ```
 ### Sample Output
-Moving mouse over 'Red' link changes background to red, etc.
+```text
+# initial white background
+Mouse over "Red" → background becomes red
+Mouse over "Blue" → background becomes blue
+Mouse over "Green" → background becomes green
+Mouse over "Ash" → background becomes ash color (#cce)
+```
 
 ## 5. Clock with Timing Event  
 
@@ -190,7 +214,14 @@ Moving mouse over 'Red' link changes background to red, etc.
 </html>
 ```
 ### Sample Output
-Page displays current time, e.g. '14:23:05 PM', updating every second.
+```text
+clock div shows:
+14:23:05 PM
+14:23:06 PM
+14:23:07 PM
+...
+(updates every second)
+```
 
 ## 6. Validate Email  
 
@@ -221,7 +252,15 @@ Page displays current time, e.g. '14:23:05 PM', updating every second.
 </html>
 ```
 ### Sample Output
-Entering 'foo@bar' brings alert about invalid address with positions; 'user@domain.com' submits normally.
+```text
+Input: foo@bar
+alert("Please enter a valid e-mail address 
+ atpostion:3
+ dotposition:-1")
+
+Input: user@domain.com
+(form submits to action URL)
+```
 
 ## 7. Password Validation  
 
@@ -278,7 +317,11 @@ Entering 'foo@bar' brings alert about invalid address with positions; 'user@doma
 </html>
 ```
 ### Sample Output
-Entering mismatched passwords shows message '** password and confirm password must be same'; matching valid length displays alert 'Password is correct'.
+```text
+pswd=abc, pswd1=xyz → ** password and confirm password must be same
+pswd=short, pswd1=short → ** length must be atleast 8 characters
+pswd=validPass, pswd1=validPass → alert("Password is correct")
+```
 
 ## 8. Array Prompt Sum  
 
@@ -304,7 +347,13 @@ Entering mismatched passwords shows message '** password and confirm password mu
 </html>
 ```
 ### Sample Output
-Prompts 3 elements 1,2,3 then alerts 'Sum =6'.
+```text
+prompt: Enter size of the array → 3
+prompt: Enter element 1 → 1
+prompt: Enter element 2 → 2
+prompt: Enter element 3 → 3
+alert("Sum =6")
+```
 
 ## 9. Focus/Blur Color Change  
 
@@ -333,7 +382,10 @@ Prompts 3 elements 1,2,3 then alerts 'Sum =6'.
 </html>
 ```
 ### Sample Output
-Focusing the textbox makes it lightgrey with blue text, blur returns to white/black.
+```text
+(on focus) textbox style: background-color: lightgrey;color:blue
+(on blur) textbox style: background-color: white;color:black
+```
 
 ## 10. Capitals and Countries  
 
@@ -366,7 +418,10 @@ Focusing the textbox makes it lightgrey with blue text, blur returns to white/bl
 </html>
 ```
 ### Sample Output
-Selecting 'India' fills textbox with 'New Delhi'.
+```text
+select value=4 (India)
+textbox value="New Delhi"
+```
 
 ## 11. First January Sunday  
 
@@ -414,7 +469,13 @@ Selecting 'India' fills textbox with 'New Delhi'.
 </html>
 ```
 ### Sample Output
-Entering years 2000 to 2020 displays 'Year having Sunday on 1st January are :2006 ,2012 ,2017 ,'; error if start > end.
+```text
+year1=2000, year2=2020
+Year having Sunday on 1st January are :2006 ,2012 ,2017 ,
+
+year1=2025, year2=2020
+Year2 must be greater than Year1
+```
 
 ## 12. Display Bio-data  
 
@@ -452,7 +513,11 @@ Entering years 2000 to 2020 displays 'Year having Sunday on 1st January are :200
 </html>
 ```
 ### Sample Output
-Submitting name=Alice,address=1 Rd,phone=123 prints three <h3> lines: Hello Alice, 1 Rd, 123.
+```html
+<h3> Hello Alice </h3>
+<h3> 1 Rd </h3>
+<h3> 123 </h3>
+```
 
 ## 13. Reverse a String  
 
@@ -478,7 +543,9 @@ print_r(Reverse($str2));
 ?>
 ```
 ### Sample Output
-Outputs 'EKASRAMUKNAVAP' for the hardcoded string.
+```text
+EKASRAMUKNAVAP
+```
 
 ## 14. Perfect/Abundant/Deficient (duplicate)  
 
@@ -515,7 +582,9 @@ Outputs 'EKASRAMUKNAVAP' for the hardcoded string.
 </html>
 ```
 ### Sample Output
-Same alert behavior as the first program.
+```text
+Enter 28 → alert("The number is perfect ")
+```
 
 ## 15. Pay Slip of an Employee  
 
@@ -579,7 +648,19 @@ Same alert behavior as the first program.
 </html>
 ```
 ### Sample Output
-For name Bob,basic=2000,desig=Clerk shows calculated gross and net salary values.
+```html
+<h1>Pay Slip of Bob</h1>
+<p>Name: Bob</p>
+<p>Designation: Clerk</p>
+<hr/>
+<p>Basic Salary: 2000</p>
+<p>Conveyance Allowance: 500</p>
+<p>Extra Allowance: 100</p>
+<p>HRA: 500</p>
+<p>Gross Salary: 3100</p>
+<p>Income Tax: 93  (3%) </p>
+<p style='font-weight:bold'>Net Salary: 3007</p>
+```
 
 ## 16. Display Last Visited Date/Time  
 
@@ -606,7 +687,10 @@ For name Bob,basic=2000,desig=Clerk shows calculated gross and net salary values
 </html>
 ```
 ### Sample Output
-First visit shows stale cookie message; second visit shows 'Your last visit was - 13:45 - 03/03/26'.
+```text
+First load → You've got some stale cookies!
+Subsequent load → Your last visit was - 13:45 - 03/03/26
+```
 
 ## 17. List of Fruits in a List Box  
 
@@ -641,7 +725,10 @@ if ($_POST) {
 ?>
 ```
 ### Sample Output
-Selecting Mango and submitting yields 'You have selected : Mango'.
+```html
+<h2> You have selected : </h2>
+Mango
+```
 
 ## 18. Store 10 Names in an Array  
 
@@ -702,7 +789,21 @@ if ($_POST) {
 ?>
 ```
 ### Sample Output
-Choosing 'display' prints each country on a new line; 'search' prints 'Position - 4'.
+```text
+(display)
+Chile
+Colombia
+Pakistan
+Pakistan
+Italy
+Chile
+Austria
+New Zealand
+United States
+
+(search)
+Position - 4
+```
 
 ## 19. Multiplication Table using PHP (+ AJAX)  
 
@@ -756,7 +857,16 @@ if($_POST) {
 ?>
 ```
 ### Sample Output
-Entering 3 produces lines '3 X 1 = 3' through '3 X 10 = 30'; clicking AJAX button loads explanation text.
+```text
+3 X 1 = 3
+3 X 2 = 6
+...
+3 X 10 = 30
+
+(after clicking AJAX button)
+Let AJAX display the details
+(ajax_info.txt content appears)
+```
 
 ## 20. Upload File to Server  
 
@@ -785,4 +895,10 @@ Entering 3 produces lines '3 X 1 = 3' through '3 X 10 = 30'; clicking AJAX butto
 ?>
 ```
 ### Sample Output
-Uploading file 'test.txt' outputs 'File Name: test.txt' followed by size and type and 'Success Uploaded'.
+```text
+File Name: test.txt
+File Size: 1024
+File Type: text/plain
+
+Success Uploaded
+```
