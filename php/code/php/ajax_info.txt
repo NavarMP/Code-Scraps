@@ -1,0 +1,5 @@
+<h1>AJAX</h1>
+<p>by AJAX it is displaying this text, telling that this is multiplication table</p>
+<p>by this program we can do any multiplication table </p>
+<p>we only need to type the number of which multiplication table we want </p>
+<p>this details are printing by ajax methods </p>

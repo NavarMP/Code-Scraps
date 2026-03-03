@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <script>
+      var x, y, z;
+      x = parseInt(window.prompt("Enter side 1"));
+      y = parseInt(window.prompt("Enter side 2"));
+      z = parseInt(window.prompt("Enter side 3"));
+      alert("sides =" + x + "  " + y + "   " + z);
+      if (x + y > z && x + z > y && z + y > x) {
+        if (x == y && y == z)
+          document.write("Equilateral Triangle");
+        else if (x == y || y == z || z == x)
+          document.write("Isosceles Triangle");
+        else
+          document.write("Scalene Triangle");
+      } else {
+        window.alert("triangle canot make by this sides");
+      }
+    </script>
+  </body>
+</html>

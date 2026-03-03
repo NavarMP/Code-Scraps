@@ -1,0 +1,36 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <label for="Year1">Year1:</label>
+    <input type="number" id="year1" name="Year1"><br><br>
+    <label for="Year2">Year2:</label>
+    <input type="number" id="year2" name="Year2"><br><br>
+    <button onClick="sun_year()">
+       Get Result
+    </button>
+    <p id="disp"></p>
+    <script>
+      function sun_year() {
+        var y1 = Number(document.getElementById('year1').value);
+        var y2 = Number(document.getElementById('year2').value);
+        var res = " ";
+        for (let year = y1; year <= y2; ++year) {
+          const c_year = new Date(year, 0, 1);
+          if (c_year.getDay() === 0) {
+            res += year + " ,";
+          }
+        }
+        if (y1 > y2) {
+          document.getElementById('disp').innerHTML = "Year2 must be greater than Year1";
+        } else {
+          if (res === " ") {
+            document.getElementById('disp').innerHTML = `<p>No Year Exist</p>`;
+          } else {
+            document.getElementById('disp').innerHTML = `<p> Year having Sunday on 1st January are :${res}</p>`;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
