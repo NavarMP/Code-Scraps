@@ -7,6 +7,11 @@ A curated list of simple shell scripts from the `shell` folder intended for begi
 ## 1. Circle Area Calculation (`1.circleArea.sh`)
 **Purpose:** Calculate the area of a circle given its radius.
 
+**Algorithm:**
+1. Read radius `r` from the user.
+2. Calculate area as `3.14 * r * r`.
+3. Display the computed area.
+
 ```bash
 #!/bin/bash
 
@@ -29,6 +34,12 @@ Area of the Circle is
 
 ## 2. Even or Odd Checker (`2.evenOdd.sh`)
 **Purpose:** Determine if a number is even or odd.
+
+**Algorithm:**
+1. Read number `n`.
+2. Find remainder `rem = n % 2`.
+3. If `rem` is `0`, print "even number".
+4. Otherwise, print "odd number".
 
 ```bash
 #!/bin/bash
@@ -56,6 +67,14 @@ Enter a number :
 
 ## 3. Menu-driven Calculator (`3.menuCalc.sh`)
 **Purpose:** Perform simple arithmetic using a case-based menu.
+
+**Algorithm:**
+1. Read two numbers `n1` and `n2`.
+2. Repeat the following while user chooses to continue:
+   a. Display arithmetic operations menu.
+   b. Read user choice `ch`.
+   c. Perform operation (Add, Sub, Mul, Div) based on `ch` and print result.
+   d. Ask if the user wants to continue.
 
 ```bash
 #!/bin/bash
@@ -118,6 +137,13 @@ n
 ## 4. Greatest of Three Numbers (`4.greatOf3No.sh`)
 **Purpose:** Identify the largest of three input integers.
 
+**Algorithm:**
+1. Read three integers `a`, `b`, and `c`.
+2. If `a` is greater than both `b` and `c`, `a` is the greatest.
+3. Else if `b` is greater than both `c` and `a`, `b` is the greatest.
+4. Else, `c` is the greatest.
+5. Print the greatest number.
+
 ```bash
 #!/bin/bash
 
@@ -148,6 +174,15 @@ Enter three Integers:
 
 ## 5. Sum of Digits (`6.digitsSum.sh`)
 **Purpose:** Compute the sum of all digits of a number.
+
+**Algorithm:**
+1. Read a number `n`.
+2. Initialize `sum = 0`.
+3. While `n > 0`:
+   a. Extract last digit `sd = n % 10`.
+   b. Add `sd` to `sum`.
+   c. Remove last digit `n = n / 10`.
+4. Print the final `sum`.
 
 ```bash
 #!/bin/bash
@@ -180,6 +215,13 @@ Sum is 10
 
 ## 6. Prime Numbers Up To Limit (`8.primeNoUpto.sh`)
 **Purpose:** List primes less than or equal to a given limit.
+
+**Algorithm:**
+1. Read a `limit`.
+2. Print `1` as prime.
+3. For each number `i` from `2` to `limit`:
+   a. Check if `i` is divisible by any number `j` from `2` to `i-1`.
+   b. If no divisor is found, `i` is prime, and print `i`.
 
 ```bash
 #!/bin/bash
@@ -231,6 +273,14 @@ prime numbers upto 10 are :
 ## 7. Fibonacci Series (`9.fibonacciNo.sh`)
 **Purpose:** Output a specified number of Fibonacci terms.
 
+**Algorithm:**
+1. Read total number of terms `total`.
+2. Initialize `x = 0`, `y = 1` and print them.
+3. For `i` from `2` to `total - 1`:
+   a. Calculate next term `z = x + y`.
+   b. Print `z`.
+   c. Update `x = y` and `y = z`.
+
 ```bash
 #!/bin/bash
 
@@ -272,6 +322,12 @@ Fibonacci Series up to 5 terms ::
 ## 8. String Reversal & Palindrome Check (`11.revStrAndPalindrome.sh`)
 **Purpose:** Reverse an input string and test for palindrome.
 
+**Algorithm:**
+1. Read string `s` and store it in a temporary file.
+2. Reverse the content of the file to get `rvs`.
+3. Compare `s` and `rvs`.
+4. If they match, print "it is palindrome". Otherwise, print "it is not a Palindrome".
+
 ```bash
 #!/bin/bash
 
@@ -301,6 +357,13 @@ it is palindrome
 
 ## 9. File Statistics (`12.filecountLineWordCharNo.sh`)
 **Purpose:** Report lines, words and characters in a given file.
+
+**Algorithm:**
+1. Read filename `file`.
+2. Count characters using `wc -c < file`.
+3. Count words using `wc -w < file`.
+4. Count lines using `grep -c "." file` (non-empty lines).
+5. Display the character, word, and line counts.
 
 ```bash
 #!/bin/bash
@@ -332,6 +395,11 @@ Number of lines in "test.txt" is 3
 ## 10. Power Calculation (`14.raisedToPowerNoValue.sh`)
 **Purpose:** Raise one number to the power of another.
 
+**Algorithm:**
+1. Read base number `a` and exponent number `b`.
+2. Compute `a ** b`.
+3. Print the result.
+
 ```bash
 #!/bin/bash
 
@@ -359,6 +427,14 @@ Enter a number:
 
 ## 11. Factorial Calculation (`15.NoFactorial.sh`)
 **Purpose:** Compute factorial of a given number.
+
+**Algorithm:**
+1. Read number `num`.
+2. Initialize `fact = 1`.
+3. While `num > 1`:
+   a. Multiply `fact` by `num`.
+   b. Decrement `num` by `1`.
+4. Print the calculated `fact`.
 
 ```bash
 #!/bin/bash
@@ -388,6 +464,11 @@ Factorial=120
 
 ## 12. Banner and Calendar Display (`18.dispBannerCalendar.sh`)
 **Purpose:** Show a welcome banner and calendar for an entered year.
+
+**Algorithm:**
+1. Print a welcome banner.
+2. Read the `year`.
+3. Run the `cal` command with `year` to display the calendar.
 
 ```bash
 #!/bin/bash
@@ -425,6 +506,13 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 ## 13. System Information Display (`20.DateTimeUsersNoTermNameLoginDT.sh`)
 **Purpose:** Print date/time, user list, terminal, login info.
 
+**Algorithm:**
+1. Clear the screen.
+2. Print current date and time using `date`.
+3. Print terminal name using `tty`.
+4. Print current users using `users`.
+5. Print login info utilizing the `w` command.
+
 ```bash
 #!/bin/bash
 
@@ -450,6 +538,13 @@ tty=ttys001  :0               Mar 3 14:00
 
 ## 14. Vowels, Consonants, Numbers Count (`23.StrVowelsConsonantsNumNo.sh`)
 **Purpose:** Count vowels, consonants, and digits in a string.
+
+**Algorithm:**
+1. Read string `string`.
+2. Count digits using `grep -o "[0-9]" | wc -l`.
+3. Count vowels using `grep -o -i "[aeiou]" | wc -l`.
+4. Count consonants using `grep -o -i "[bcdfghjklmnpqrstvwxyz]" | wc -l`.
+5. Print the counts.
 
 ```bash
 #!/bin/bash
@@ -477,6 +572,18 @@ The given string has 2 vowels, 3 consonants and 3 numbers in it.
 
 ## 15. File Operations Menu (`25.fileOperationsMenu.sh`)
 **Purpose:** Perform file operations like display, list, make directory, copy, rename, and delete.
+
+**Algorithm:**
+1. Display file operations menu.
+2. Read user `choice`.
+3. Based on `choice`, read required inputs (e.g., filename):
+   a. 1: Display file content (`cat`).
+   b. 2: List files (`ls`).
+   c. 3: Make directory (`mkdir`).
+   d. 4: Copy file (`cp`).
+   e. 5: Rename file (`mv`).
+   f. 6: Delete file (`rm`).
+4. Read choice until user selects Exit.
 
 ```bash
 #!/bin/bash
