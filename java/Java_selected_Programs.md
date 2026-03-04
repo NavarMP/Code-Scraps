@@ -45,6 +45,15 @@ public class p1Calc {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p1Calc {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter first number: 15
@@ -94,6 +103,15 @@ public class p2TriSides {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p2TriSides {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter 3 sides:
@@ -137,6 +155,15 @@ public class p3ReadArr {
         System.out.println("Second largest: " + arr[count - 2]);
     } 
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p3ReadArr {
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
@@ -186,6 +213,21 @@ public class p4BaseConversion {
         c.convert(); 
     }
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class Convert {
+        ~num: int
+        ~getVal(sc: Scanner) void
+        ~convert() void
+    }
+    class p4BaseConversion {
+        +main(args: String[])$ void
+    }
+    p4BaseConversion ..> Convert : uses
 ```
 
 **Sample Output:**
@@ -253,6 +295,15 @@ public class p5Merge2Arr {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p5Merge2Arr {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter number of elements in 1st array: 
@@ -304,6 +355,15 @@ public class p6HCFLCM {
         System.out.println("LCM = " + lcm); 
     }
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p6HCFLCM {
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
@@ -373,6 +433,15 @@ public class p7MatrixTraceAndTranspose {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p7MatrixTraceAndTranspose {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter Number of Rows: 3
@@ -439,6 +508,24 @@ public class p8DigSumAndReverse {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class sumRev {
+        ~rem: int
+        ~m: int
+        ~sum: int
+        +sumRev()
+        ~reverse(n: int) void
+        ~digit(n: int) void
+    }
+    class p8DigSumAndReverse {
+        +main(args: String[])$ void
+    }
+    p8DigSumAndReverse ..> sumRev : uses
+```
+
 **Sample Output:**
 ```
 Enter a number: 12345
@@ -495,6 +582,15 @@ public class p9Anagram {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p9Anagram {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter first string: listen
@@ -524,6 +620,15 @@ public class p10RemoveVowels {
         System.out.println(str2); 
     } 
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p10RemoveVowels {
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
@@ -606,6 +711,35 @@ public class p11StdDetails {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class student {
+        ~admNo: int
+        ~sc: Scanner
+        ~student()
+        ~read() void
+        ~display() void
+    }
+    class mark {
+        ~mark: int[]
+        ~total: int
+        ~avg: int
+        ~i: int
+        ~result: String
+        ~mark()
+        ~read() void
+        ~calculate() void
+        ~display() void
+    }
+    class p11StdDetails {
+        +main(args: String[])$ void
+    }
+    mark --|> student
+    p11StdDetails ..> mark : uses
+```
+
 **Sample Output:**
 ```
 Enter Admission number: 101
@@ -666,6 +800,23 @@ public class p12sumOfComplexNo {
 } 
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class Complex {
+        ~real: int
+        ~imaginary: int
+        ~Complex()
+        ~Complex(tempReal: int, tempImaginary: int)
+        ~addComp(c1: Complex, c2: Complex) Complex
+    }
+    class p12sumOfComplexNo {
+        +main(args: String[])$ void
+    }
+    p12sumOfComplexNo ..> Complex : uses
+```
+
 **Sample Output:**
 ```
 Enter first real part number: 3
@@ -701,6 +852,17 @@ public class p13countNoOfObjects {
         System.out.println("Number of Objects Created: " + count);
     }
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p13countNoOfObjects {
+        ~count: int$
+        ~p13countNoOfObjects()
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
@@ -757,6 +919,21 @@ public class p14volumeCalc {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class Overload {
+        ~area(l: float, w: float, b: float) double
+        ~area(l: float) double
+        ~area(r: float, h: float) double
+    }
+    class p14volumeCalc {
+        +main(args: String[])$ void
+    }
+    p14volumeCalc ..> Overload : uses
+```
+
 **Sample Output:**
 ```
 Enter length, width and height of rectangular box:
@@ -803,6 +980,15 @@ public class p22distancebw2pt {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p22distancebw2pt {
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter x1: 0
@@ -844,6 +1030,15 @@ public class p23fibonacciUpToLt {
         sc.close(); 
     } 
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p23fibonacciUpToLt {
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
@@ -902,6 +1097,16 @@ public class p24ArmstrongWithinRange {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class p24ArmstrongWithinRange {
+        +isArmstrong(num: int)$ boolean
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter the starting number: 1
@@ -947,6 +1152,16 @@ public class PrimeCheck {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class PrimeCheck {
+        +isPrime(num: int)$ boolean
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter a number: 17
@@ -981,6 +1196,16 @@ public class FactorialProgram {
 }
 ```
 
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class FactorialProgram {
+        +factorial(n: int)$ int
+        +main(args: String[])$ void
+    }
+```
+
 **Sample Output:**
 ```
 Enter a number: 5
@@ -1012,6 +1237,15 @@ public class OddEvenCheck {
         sc.close();
     }
 }
+```
+
+**Class Diagram:**
+
+```mermaid
+classDiagram
+    class OddEvenCheck {
+        +main(args: String[])$ void
+    }
 ```
 
 **Sample Output:**
